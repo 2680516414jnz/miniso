@@ -1,0 +1,112 @@
+@import './reset.scss';
+
+// 尾部css
+.x-footer{
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    text-align: center;
+    overflow: hidden;
+    .x-whiteBoard{
+        padding: 40px 0px;
+        .x-main {
+            width: 1090px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            ul{
+                li{
+                    float: left;
+                    h1{
+                        font-size: 16px;
+                        display: block;
+                        font-weight: 100;
+                    }
+                    h2{
+                        font-size: 24px;
+                        line-height: 24px;
+                        margin: 31px 0 22px;
+                        font-weight: 100;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                    p{
+                        margin-top: 28px;
+                        width: 243px;
+                        line-height: 25px;
+                        text-align: left;
+                    }
+                }
+                .middle{
+                    width:443px;
+                    height: 170px;
+                    padding: 0 97px 0 91px;
+                    border-left: 1px solid #e8e8e8;
+                    border-right: 1px solid #e8e8e8;
+                    margin: 0 91px 0 112px;
+                    h1{
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                    p{
+                        margin-top: 28px;
+                        width: 243px;
+                        line-height: 25px;
+                        text-align: left;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom{
+        width: 100%;
+        height: 210px;
+        background-color: #414141;
+        text-align: center;
+        margin-top: 165px;
+        .x-main{
+            width: 1090px;
+            margin: 0 auto;
+            .borderB{
+                width: 100%;
+                height: 120px;
+                border-bottom: 1px solid #5c5c5c;
+                padding-top: 40px;
+                li{
+                    float: left;
+                    width: 33.3%;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 20px;
+                        vertical-align: middle;
+                    }
+                    span{
+                        color: #fff;
+                        font-size: 18px;
+                        line-height: 55px;
+                    }
+                }
+            }
+            .link{
+                width: 390px;
+                height: 40px;
+                padding-top: 20px;
+                margin: 0 auto;
+                li{
+                    float: left;
+                    padding-right: 15px;
+                    a{
+                        color: #ccc;
+                    }
+                }
+            }
+            p{
+                font-size: 12px;
+                color: #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+</head>
+<body>
+     <!-- 头部内容 -->
+    <div id="header-container">
+        <!-- logo部分 -->
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <div class="bigImage">
+            <a href="javascript:;"></a>
+        </div>
+        <!-- 新品首发 -->
+        <div class="x-main">
+            <div class="x-channelTitle">
+                <h1>新品首发</h1>
+                <span>每周上新，特惠不停</span>
+                <a class="x-pt15" href="/list.html">更多首发&nbsp;&#62;</a>
+            </div>
+        </div>
+        <!-- 新品图轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="main-container">
+                <script type="text/html" id="main-template">
+                    {{each resp message}}
+                    <div class="swiper-slide">
+                           
+                        <a href="javascript:;">
+                            <div class="newImg-wrap">
+                                <img src="{{message.newImg}}" alt="">
+                                <div class="newName">{{message.newName}}</div>
+                                <div class="newPrice">{{message.newPrice}}</div>
+                            </div>
+                        </a>        
+                        <a href="javascript:;">
+                            <div class="newImg-wrap">
+                                <img src="{{message.newImg}}" alt="">
+                                <div class="newName">{{message.newName}}</div>
+                                <div class="newPrice">{{message.newPrice}}</div>
+                            </div>
+                        </a>  
+                        <a href="javascript:;">
+                            <div class="newImg-wrap">
+                                <img src="{{message.newImg}}" alt="">
+                                <div class="newName">{{message.newName}}</div>
+                                <div class="newPrice">{{message.newPrice}}</div>
+                            </div>
+                        </a> 
+                        <a href="javascript:;">
+                            <div class="newImg-wrap">
+                                <img src="{{message.newImg}}" alt="">
+                                <div class="newName">{{message.newName}}</div>
+                                <div class="newPrice">{{message.newPrice}}</div>
+                            </div>
+                        </a> 
+                    </div>
+                    {{/each}}
+                
+            </script>
+        </div>  
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+          <!-- 商品分类 -->
+        <div class="product-container">
+            <div class="product-list">
+                <div class="x-channelTitle x-categoryList">
+                    <h1>居家</h1>
+                    <ul>
+                        <li>
+                          <div></div><a href="/category-channel-16-48.html#cid48">清洁保鲜</a>
+                        </li>
+                        <li>
+                          <div></div><a href="/category-channel-16-51.html#cid51">家饰</a>
+                        </li>
+                        <li>
+                          <div></div><a href="/category-channel-16-55.html#cid55">收纳</a>
+                        </li>
+                        <li>
+                          <div></div><a href="/category-channel-16-56.html#cid56">浴室用品</a>
+                        </li>
+                        <li>
+                            <div></div><a href="/category-channel-16-36.html#cid36">拖鞋</a>
+                        </li>
+                        <li>
+                            <div></div><a href="/category-channel-16-61.html#cid61">床品</a>
+                        </li>
+                    </ul>
+                      <a class="x-pt15" href="/list.html">查看更多&nbsp;></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主体部分结束 -->
+    </div>
+
+  
+
+    <!-- footer部分 -->
+    <div id="footer-container"></div>
+
+   <script src="libs/require/require.min.js" data-main="js/index"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@import './reset.scss';
+.header{
+    width: 100%;
+    height: 30px;
+    background-color:#010101; 
+    .header-wrap{
+        width: 1090px;
+        height: 30px;
+        margin: 0 auto;
+        .header-left{
+            line-height: 30px;
+            font-size: 12px;
+            color: #cccccc;
+            float: left;
+        }
+        .login-wrap{
+            float: left;
+            color: #cccccc;
+            font-size: 12px;
+            line-height: 30px;
+            .login{
+                padding-left: 608px;
+            }
+            .isShow{
+                padding-right: 23px;
+                display: inline-block;
+            }
+            .welcome{
+                display: none;
+            }
+        }
+        .header-list{
+            float: left;
+            width: 233px;
+            height: 30px;
+            li{
+                float: left;
+                width: 77px;
+                height: 14px;
+                font-size: 12px;
+                padding-left: 15px;
+                border-left: 1px solid #cccccc;
+                margin-top: 7px;
+                a{
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 14px;
+                }
+            }
+        }
+
+
+    }
+}
+.header-logo{
+    width: 1090px;
+    height: 115px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 27px;
+    position: relative;
+    overflow: hidden;
+    .bigLogo{
+        float: left;
+        img{
+            position: absolute;
+            width: 200px;
+            height: 44px;
+            left: 443px;
+        }
+    }
+    form{
+        position: absolute;
+        width: 310px;
+        height: 36px;
+        float: left;
+        margin-left: 70px;
+        margin-top: 8px;
+        border: 1px solid #dddddd;
+        right: 78px;
+        .searchBtn{
+            position: absolute;
+            line-height: 36px;
+            width: 16px;
+            height: 16px;
+            margin-left: 13px;
+            margin-top: 10px;
+            border: none;
+            background: url("/images/search.png") no-repeat center center;
+        }
+        input{
+            width: 260px;
+            height: 34px;
+            margin-left: 37px;
+            border: none;
+        }
+    }
+    .cart{
+        position: absolute;
+        top: 63px;
+        right: 26px;
+        .shopNum{
+            width: 5px;
+            height: 5px;
+            background-color: red;
+        }
+    }
+}
+.shop-list{
+    width: 1090px;
+    height: 107px;
+    overflow: hidden;
+    margin: 0 auto;
+    .list-wrap{
+        height: 30px;
+        margin-top: 33px;
+        display: flex;
+
+        .list-left{
+            width: 734px;
+            height: 30px;
+            margin-left: 147px;
+            .list-name{
+                li{
+                    float: left;
+                    width: 85px;
+                    height: 30px;
+                    font-size: 12px;
+                    a{
+                        width: 30px;
+                        height: 30px;
+                        font-family: "Microsoft YaHei"!important;
+                        color: #333333;
+                        display: inline-block;
+                        &:hover{
+                            color: #d9232e;
+                            border-bottom: 2px solid #d9232e;
+                        }
+                    }
+                    .secMenu{
+                        
+                    }
+                    
+                }
+                .last{
+                    width: 54px;
+                }
+            }
+        }
+        .list-right{
+            overflow: hidden;
+            ul{
+                width: 60px;
+                height: 20px;
+                padding-left: 30px;
+                border-left: 1px solid #333333;
+                li{
+                    a{  
+                        height: 30px;
+                        color: #333333;
+                        font-size: 12px;
+                        font-weight: 500;
+                        display: inline-block;
+                        font-family: "Microsoft YaHei"!important;
+                        overflow: hidden;
+                        &:hover{
+                            color: #d9232e;
+                            border-bottom: 2px solid #d9232e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+@import './model/reset.scss';
+@import './model/header.scss';
+@import './model/footer.scss';
+
+.main{
+    // height: 800px;
+    // background: saddlebrown;
+    .bigImage{
+        width: 100%;
+        height: 420px;
+        a{
+            display: block;
+            background: url("/images/ms.jpg") no-repeat center center;
+            width: 100%;
+            height: 100%;  
+            background-position: center center;
+            background-size: cover;  
+        }
+    }
+    .x-main{
+        width: 1090px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 60px;
+        .x-channelTitle{
+            width: 100%;
+            line-height: 50px;
+            h1{
+                font-size: 28px;
+                line-height: 28px;
+                padding-right: 18px;
+                vertical-align: text-bottom;
+                font-weight: 100;
+                display: inline-block;
+            }
+            span{
+                display: inline-block;
+                font-size: 14px;
+                vertical-align:text-bottom;
+            }
+            .x-pt15{
+                font-size: 14px;
+                float: right;
+                color: #333;
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: 390px;
+        //height: 265px;
+        .swiper-wrapper{
+            width: 1092px;
+            height: 390px;
+            margin: 0 auto;
+            .newImg-wrap{
+                float: left;
+                width: 265px;
+                height: 390px;
+                img{
+                    width: 265px;
+                    height: 265px; 
+                }
+                .newName{
+                    display: block;
+                    margin: 0 auto;
+                    padding-bottom: 5px;
+                    width: 168px;
+                    font-size: 14px;
+                    line-height: 25px;
+                    overflow: hidden;
+                }
+                .newPrice{
+                    font-size: 14px;
+                    color: #d9232e;
+                    padding-left: 84px;
+                }
+            }
+        }
+    }
+// 商品分类 包含在主体部分之内
+.product-container{
+    width: 100%;
+   // padding-top: 60px;
+    .product-list{
+        width: 1090px;
+        margin: 0 auto;
+        height: 820px;
+        background-color: red;
+        line-height: 50px;
+        h1{
+            font-size: 28px;
+            line-height: 28px;
+            padding-right: 18px;
+            float: left;
+            font-weight: 100;
+        }
+        ul{
+            vertical-align: text-bottom;
+            height: 17px;
+            li{
+                padding-right: 16px;
+                padding-top: 12px;
+                float: left;
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+        .x-pt15{
+            padding-top: 13px;
+            float: right;
+        }
+        
+    }
+}
+
+}
