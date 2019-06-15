@@ -1,0 +1,91 @@
+@import './model/reset.scss';
+@import './model/header.scss';
+@import './model/footer.scss';
+.x-signIn{
+    height: 450px;
+    background-color: #fff!important;
+    //padding: 0px 0;
+    box-sizing: border-box;
+    .x-main {
+        width: 1090px;
+        margin: 0 auto;
+        .imgBoard{
+            width: 640px;
+            display: inline-block;
+            img{
+                box-shadow: 3px 3px 5px rgba(178,178,178,.3);
+                vertical-align: middle;
+            }
+        }
+        .x-fll{
+                float: left;
+            }
+        .signInBoard{
+            width: 380px;
+            padding-left: 50px;
+            display: inline-block;
+            border-left: 1px solid #eee;
+            position: relative;
+            p{
+                padding-bottom: 27px;
+                font-size: 18px;
+            }
+            .x-pb12{
+                padding-bottom: 12px;
+                input{
+                    box-sizing: border-box;
+                    padding-left: 9px;
+                    width: 380px;
+                    height: 36px;
+                    border: 1px solid #ddd;
+                    border-radius: 3px;
+                }
+            }
+            input{
+                box-sizing: border-box;
+                padding-left: 9px;
+                width: 380px;
+                height: 36px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+            }
+            .h85{
+                padding-top: 12px;
+                height: 85px;
+                .x-red{
+                    height: 31px;
+
+                }
+            }
+            .agree{
+                width: 380px;
+                font-size: 12px;
+                padding-bottom: 17px;
+                .x-checkbox{
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    cursor: pointer;
+                    width: 16px;
+                    height: 16px;
+                    background: url("http://m.miniso.cn/public/app/siteyx/statics/static/images/checkbox_c.png") center center no-repeat;
+                }
+                span{
+                    padding-left: 8px;
+                    vertical-align: text-bottom;
+                }
+                .x-blue{
+                    color: #69c!important;
+                }
+            }
+            button{
+                width: 380px;
+                height: 48px;
+                font-size: 18px;
+                background-color: #d9232e!important;
+                color: #fff;
+                font-weight: 400;
+            }
+            
+        }
+    }
+}

@@ -3,6 +3,6 @@
 define(()=>{
     return {
         baseUrl : 'http://rap2api.taobao.org/app/mock/178420/',
-        basePhpUrl : 'http://localhost'
+        basePhpUrl : 'http://localhost/miniso/api/v1/'
     }
 })

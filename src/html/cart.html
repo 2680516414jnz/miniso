@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>Document</title>
+    <style>
+        　input[type=number]::-webkit-inner-spin-button,
+　　      input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0;}
+    </style>
+</head>
+<body>
+    <!-- 头部内容 -->
+    <div id="header-container"></div>
+    <!-- 主体部分 -->
+    <div class="cart-bigwrap">
+        <div class="cart-wrap">
+            <div class="x-row tipBar">
+                <div class="x-checkbox chooseAll"></div>
+                <p class="selectAll">全选</p>
+                <p>单价</p>
+                <p class="quantity">数量</p>
+                <p>小计</p>
+                <p class="clearShop" id="clearShop">清空购物车</p>
+            </div>
+        </div>
+        <!-- 购物车列表 -->
+        <div class="cart-list">
+            <ul class="cartList" id="car-container">
+                <script type="text/html" id="car-template">
+                    {{each data message}}
+                    <li class="shoplist" data-id ="{{message.id}}">
+                        <div class="p_onSale x-checkbox item-checkbox"></div>
+                        <div class="imgbox">
+                            <a href="javascript:;">
+                                <img src="{{message.imag}}" alt="">
+                            </a>
+                        </div>
+                        <div class="data goods_detail">
+                            <a href="/html/detail.html?id={{message.id}}" class="goods_name">{{message.name}}</a>
+                            <div class="norm">
+                                <span class="normBtn" data-index="99">黑色 L</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p class="shopprice">{{message.price}}</p>
+                        </div>
+                        <div class="count">
+                            <a href="javascript:;" class="less shop">-</a>
+                            <input type="number" value="{{message.cartNum}}" min="1" class="cart-num">
+                            <a href="javascript:;" class="more shop">+</a>
+                        </div>
+                        <span class="subtotal x-red"></span>
+                        <div class="del"></div>
+                    </li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+        <!-- 商品列表部分结束 -->
+        <!-- 结算部分开始 -->
+        <div class="x-floor">
+            <div class="x-row x-main settle">
+                <!-- <div class="x-checkbox chooseAll"></div>
+                <p class="onSelected">已选<span>(0)</span></p> -->
+                <button class="settleBtn x-redBtn" disabled="disabled" id="checkout">下单结算</button>
+                <div class="detail">
+                    <span>应付总额：</span>
+                    <h1 class="x-red">&yen;</h1>
+                    <h1 class="x-red" id="cartPayCount">0</h1>
+                </div>
+            </div>
+        </div>
+        <!-- 结算部分结束 -->
+    </div> 
+
+    <!-- footer部分 -->
+    <div id="footer-container"></div>
+    <script src="/libs/require/require.min.js" data-main="/js/cart"></script>
+</body>
+</html>

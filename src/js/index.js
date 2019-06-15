@@ -39,7 +39,7 @@ require(['./config'], ()=>{
         render(resp){
             console.log(resp);
             let html = template("main-template", {resp})
-            console.log(html);
+            //console.log(html);
             $("#main-container").html(html);
         }
     }

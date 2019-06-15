@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <title>注册页</title>
+    <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
     <!-- 头部部分 -->
     <div id="header-container"></div>
+    <!-- 主体部分 -->
+
+    <!-- 登录板块 开始 -->
+    <div class="x-signIn">
+        <div class="x-main">
+            <div class="imgBoard x-fll">
+                <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/signBG.png" alt="">
+            </div>
+            <!-- 输入框 开始 -->
+            <div class="signInBoard x-fll">
+                <p>账号注册</p>
+                <div class="x-pb12">
+                    <input name="input-phone" maxlength="11" id="username" placeholder="请输入手机号" onkeyup="value=value.replace(/[^\d]/g,'')">
+                </div>
+                <input name="input-password" type="password" id="password" placeholder="设置密码 ( 6-16 位数字和字母)" onkeyup="value=value.replace(/[\W]/g,'')">
+                
+                <div class="h85">
+                    <div class="x-red" id="err-msg"></div>
+                </div>
+                <div class="agree">
+                    <div class="x-checkbox x-checkboxC"></div>
+                    <span>阅读并同意</span>
+                    <a href="http://m.miniso.cn/article-help-i-service.html" class="x-blue">《名创优品用户服务协议》</a>
+                    <a href="http://m.miniso.cn/article-help-i-privacy.html" class="x-blue">《平台隐私政策》</a>
+                </div>
+                <!-- 上可用，下不可用状态 -->
+                 <button class="loginBtn x-redBtn" id="submit-btn">立即注册</button>
+            </div>
+            <!-- 输入框 结束 -->
+        </div>
+    </div>
+    <!-- 登录板块 结束 -->
+    
 
     <!-- 尾部部分 -->
     <div id="footer-container"></div>
